@@ -47,6 +47,7 @@ function agregarAlCarrito(producto) {
   localStorage.setItem("totalItems", totalItems);
   localStorage.setItem("totalPrecio", totalPrecio);
 
+
 }
 
 
@@ -83,21 +84,7 @@ function mostrarCarrito() {
   panel.classList.toggle("carrito-visible");
   actualizarListaCarrito();
 }
-// Actualizar lista de productos
-function actualizarListaCarrito() {
-  const lista = document.getElementById("lista-carrito");
-  lista.innerHTML = "";
-  // Si no hay productos
-  if (totalItems === 0) {
-    lista.innerHTML = "<li>Carrito vacío</li>";
-    return;
-  }
-  // Agregar ítems del carrito 
-  const item = document.createElement("li");
-  item.textContent = `Total de productos: ${totalItems} - Precio total: $${totalPrecio.toLocaleString()}`;
 
-  lista.appendChild(item);
-}
 function actualizarListaCarrito() {
   const lista = document.getElementById("lista-carrito");
   lista.innerHTML = "";
