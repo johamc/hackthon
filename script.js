@@ -22,3 +22,6 @@
       document.getElementById("total-items").textContent = totalItems;
       document.getElementById("total-precio").textContent = totalPrecio.toLocaleString();
     }
+
+
+
