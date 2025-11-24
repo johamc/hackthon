@@ -7,25 +7,17 @@ header {
   display: flex;               /* Coloca los elementos en la misma línea */
   justify-content: space-between; /* Separa el texto a la izquierda y el carrito a la derecha */
   align-items: center;         /* Centra verticalmente los elementos */
-  padding: 10px 30px;          /* Espaciado interno (arriba/abajo - izquierda/derecha) */
-  background-color: #f7f7f7;   /* Color de fondo suave (opcional) */
-  border-bottom: 2px solid #ccc; /* Línea decorativa abajo (opcional) */
+  padding: 10px 10px;          /* Espaciado interno (arriba/abajo - izquierda/derecha) */
+  background-color: #c3c9eb;   /* Color de fondo suave (opcional) */
+  border-bottom: 2px solid #575454; /* Línea decorativa abajo (opcional) */
 }
 
-#titulo {
-  font-family: "Century Gothic", sans-serif;
-  font-size: 28px;             /* Tamaño moderado */
-  color: #1a237e;              /* Azul oscuro */
-  margin: 0;                   /* Elimina márgenes por defecto */
-}
-
-.carrito-icono {
-  width: 50px;           /* tamaño tipo ícono */
-  height: 50px;          /* cuadrado pequeño */
+#logo{
+  width: 100px;           
+  height: 100px;          
   object-fit: contain;   /* mantiene proporción */
-  cursor: pointer;       /* cambia el cursor al pasar */
-  transition: transform 0.2s ease; /* animación suave */
 }
+
 /* --- contenedor principal --- */
 .contenedor {
   display: flex;              /* 🔥 Pone las tarjetas en una fila */
@@ -70,7 +62,7 @@ button {
 }
 
 button:hover {
-  background-color: #8589b2;
+ background: rgb(255, 166, 0);
 }
 
 .tarjeta p {
@@ -139,4 +131,97 @@ h3{
 @keyframes spin {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
+}
+footer {
+  background-color: #f7f7f7;
+  padding: 30px;
+  margin-top: 40px;
+  border-top: 2px solid #ccc;
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+}
+
+#pie {
+  font-size: 26px;
+  color: #1a237e;
+  margin-bottom: 5px;
+}
+
+#slogan {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.autores {
+  text-align: left;
+}
+
+.autores ul {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.autores li {
+  list-style: none;
+  font-size: 15px;
+  color: #333;
+}
+
+/* 🔥 REDES SOCIALES EN UNA SOLA LÍNEA */
+.iconos-redes {
+  display: flex;              /* Fuerza alineación horizontal */
+  justify-content: center;
+  gap: 15px;                   /* Espacio entre íconos */
+  margin-top: 10px;
+}
+
+.iconos-redes img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.iconos-redes img:hover {
+  transform: scale(1.1);
+}
+
+.fecha {
+  font-size: 14px;
+  color: #777;
+  margin-top: 15px;
+}
+.logo-footer {
+  display: flex;
+  justify-content: center;   /* Centra logo + texto */
+  align-items: center;       /* Alinea verticalmente */
+  gap: 10px;                 /* Espacio entre logo y nombre */
+  margin-bottom: 10px;
+}
+
+.logo-footer img {
+  width: 100px;               /* Ajusta tamaño del logo */
+  height: 100px;
+  object-fit: contain;
+}
+
+#vaciar-carrito:hover {
+  color: white;
+  background: rgb(255, 166, 0);;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+#vaciar-carrito {
+  cursor: pointer;
 }

@@ -9,10 +9,11 @@
 <body>
   <main>
     <header>
-      <h1 id="titulo">Carrito de Compras</h1>
+      <img src="logo.png" alt="logo" id="logo">
       <div class="info-carrito">
         🛒 Items: <span id="total-items">0</span> |
-        Total: $<span id="total-precio">0</span>
+        Total: $<span id="total-precio">0</span>  |
+        <span id="vaciar-carrito" class="btn-eliminar">🗑️ Eliminar</span>
       </div>
     </header>
 
@@ -38,6 +39,70 @@
         <p>Precio: $<span id="precio-galaxy">209000</span></p>
         <button onclick="agregarAlCarrito('galaxy')">Agregar al carrito</button>
       </div>
+
+      <div class="tarjeta">
+        <img src="tenisecly.png" />
+        <h3>Tenis Eclyptic</h3>
+        <p>Precio: $<span id="precio-eclyp">299000</span></p>
+        <button onclick="agregarAlCarrito('eclyp')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="colom.png" />
+        <h3>Camiseta Colombia</h3>
+        <p>Precio: $<span id="precio-colo">380000</span></p>
+        <button onclick="agregarAlCarrito('colo')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="buso.png" />
+        <h3>Buzo Essential</h3>
+        <p>Precio: $<span id="precio-buzo">138000</span></p>
+        <button onclick="agregarAlCarrito('buzo')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="camis.png" />
+        <h3>Camiseta Cedes</h3>
+        <p>Precio: $<span id="precio-cedes">65000</span></p>
+        <button onclick="agregarAlCarrito('cedes')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="hoodie.png" />
+        <h3>Chaqueta Essential</h3>
+        <p>Precio: $<span id="precio-hoodie">190000</span></p>
+        <button onclick="agregarAlCarrito('hoodie')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="licra.png" />
+        <h3>Licra Larga</h3>
+        <p>Precio: $<span id="precio-licra">230000</span></p>
+        <button onclick="agregarAlCarrito('licra')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="bralette.png" />
+        <h3>Bralette Hyperglam</h3>
+        <p>Precio: $<span id="precio-bralette">170000</span></p>
+        <button onclick="agregarAlCarrito('bralette')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="camiseta.png" />
+        <h3>Camiseta Manga</h3>
+        <p>Precio: $<span id="precio-camiseta">190000</span></p>
+        <button onclick="agregarAlCarrito('camiseta')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="short.png" />
+        <h3>Short Optime</h3>
+        <p>Precio: $<span id="precio-optime">160000</span></p>
+        <button onclick="agregarAlCarrito('optime')">Agregar al carrito</button>
+      </div>
+
     </section>
     
 
@@ -75,6 +140,40 @@
     </section>
 
   </main>
+  <footer>
+    <div class="logo-footer">
+        <img src="./imagenes/hacksportlogo.png" alt="Logo Hacksport">
+        <h3 id="pie"></h3>
+    </div>
+
+    <h5 id="slogan">Haz deporte siempre a la moda</h5>
+
+    <div class="info">
+        <div class="autores">
+            <strong>Equipo de Trabajo:</strong>
+            <ul>
+                <li>David Benavides Restrepo: dbenavides@hacksport.com</li>
+                <li>Johana Monsalve Campiño: jcampiño@hacksport.com</li>
+                <li>Juan Sebastian Nieto Diaz: jnieto@hacksport.com</li>
+                <li>Elker Herrera: eherrera@hacksport.com</li>
+                <li>Alvaro Daniel Hernandez: ahernandez@hacksport.com</li>
+            </ul>
+        </div>
+
+        <div class="redes">
+            <strong>Síguenos en nuestras redes sociales:</strong>
+
+            <div class="iconos-redes">
+                <img class="img" src="./imagenes/facebook.png" alt="Facebook">
+                <img class="img" src="./imagenes/instagram.png" alt="Instagram">
+                <img class="img" src="./imagenes/tiktok.png" alt="Tik-Tok">
+            </div>
+        </div>
+    </div>
+
+    <p class="fecha">Fecha Actualización: Noviembre 2025</p>
+</footer>
+
   <script src="script.js"></script>
 </body>
 </html>
