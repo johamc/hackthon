@@ -156,3 +156,14 @@ footer {
   height: 100px;
   object-fit: contain;
 }
+
+#vaciar-carrito:hover {
+  color: white;
+  background: rgb(255, 166, 0);;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+#vaciar-carrito {
+  cursor: pointer;
+}
