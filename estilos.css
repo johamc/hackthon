@@ -147,7 +147,7 @@ h3 {
   /*background: linear-gradient(135deg, #3a7bd5, #00d2ff);*/
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('images/sport4.png') no-repeat center center;
+    url('imagenes/sport4.png') no-repeat center center;
   align-content: center;
 
 }
