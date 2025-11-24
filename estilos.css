@@ -268,7 +268,6 @@ footer {
 /* Sección que controla la animación por scroll */
 .animation-section {
   height: 350vh;
-  /* aumenta para alargar la animación */
   width: 100%;
   background: #000;
   position: relative;
@@ -277,9 +276,9 @@ footer {
 /* Imagen sticky que cubre el área de la animación */
 #animImage {
   position: sticky;
-  top: 60px;
+  top: 0px;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh);
   object-fit: cover;
   display: block;
   z-index: 5;
