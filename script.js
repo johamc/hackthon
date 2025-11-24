@@ -39,6 +39,8 @@
       document.getElementById("total-precio").textContent = totalPrecio.toLocaleString();
     }
 
+
+
     // Detectar clic en el botón Vaciar Carrito
 document.getElementById("vaciar-carrito").addEventListener("click", vaciarCarrito);
 
