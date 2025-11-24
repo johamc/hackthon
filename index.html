@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="estilos.css" />
-  <title>Carrito de Compras</title>
+  <title>Hacksports</title>
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;600;800&display=swap"
+    rel="stylesheet">
+
 </head>
+
 <body>
   <main>
     <header>
       <img src="logo.png" alt="logo" id="logo">
       <div class="info-carrito">
         🛒 Items: <span id="total-items">0</span> |
-        Total: $<span id="total-precio">0</span>  |
+        Total: $<span id="total-precio">0</span> |
         <span id="vaciar-carrito" class="btn-eliminar">🗑️ Eliminar</span>
       </div>
     </header>
+    <!-- animación-->
+    <section class="animation-section">
+      <img id="animImage" src="video1/ezgif-frame-001.jpg" alt="Animación scroll">
+
+      <!-- Texto dentro del área de animación -->
+      <div id="overlayText" aria-hidden="true">
+        <div class="text-wrap">
+          <div class="imagine">IMAGINE</div>
+          <div class="by">by <span class="brand">Hacksport</span></div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Contenedor de tarjetas -->
     <section class="contenedor">
@@ -104,17 +123,17 @@
       </div>
 
     </section>
-    
+
 
     <section>
       <h2 class="titulo">Step Up your Style today!</h2>
 
       <div class="carrusel">
         <div class="grupo">
-          <div class="card"> 
+          <div class="card">
             <img src="images/sport1.png" class="img">
           </div>
-          
+
           <div class="card"> <img src="images/sport2.png" class="img"></div>
           <div class="card"> <img src="images/sport3.png" class="img"></div>
           <div class="card"> <img src="images/sport4.png" class="img"></div>
@@ -123,10 +142,10 @@
           <div class="card"> <img src="images/sport7.png" class="img"></div>
           <div class="card"> <img src="images/sport8.png" class="img"></div>
 
-          <div class="card"> 
+          <div class="card">
             <img src="images/sport1.png" class="img">
           </div>
-          
+
           <div class="card"> <img src="images/sport2.png" class="img"></div>
           <div class="card"> <img src="images/sport3.png" class="img"></div>
           <div class="card"> <img src="images/sport4.png" class="img"></div>
@@ -142,38 +161,40 @@
   </main>
   <footer>
     <div class="logo-footer">
-        <img src="./imagenes/hacksportlogo.png" alt="Logo Hacksport">
-        <h3 id="pie"></h3>
+      <img src="./imagenes/hacksportlogo.png" alt="Logo Hacksport">
+      <h3 id="pie"></h3>
     </div>
 
     <h5 id="slogan">Haz deporte siempre a la moda</h5>
 
     <div class="info">
-        <div class="autores">
-            <strong>Equipo de Trabajo:</strong>
-            <ul>
-                <li>David Benavides Restrepo: dbenavides@hacksport.com</li>
-                <li>Johana Monsalve Campiño: jcampiño@hacksport.com</li>
-                <li>Juan Sebastian Nieto Diaz: jnieto@hacksport.com</li>
-                <li>Elker Herrera: eherrera@hacksport.com</li>
-                <li>Alvaro Daniel Hernandez: ahernandez@hacksport.com</li>
-            </ul>
-        </div>
+      <div class="autores">
+        <strong>Equipo de Trabajo:</strong>
+        <ul>
+          <li>David Benavides Restrepo: dbenavides@hacksport.com</li>
+          <li>Johana Monsalve Campiño: jcampiño@hacksport.com</li>
+          <li>Juan Sebastian Nieto Diaz: jnieto@hacksport.com</li>
+          <li>Elker Herrera: eherrera@hacksport.com</li>
+          <li>Alvaro Daniel Hernandez: ahernandez@hacksport.com</li>
+        </ul>
+      </div>
 
-        <div class="redes">
-            <strong>Síguenos en nuestras redes sociales:</strong>
+      <div class="redes">
+        <strong>Síguenos en nuestras redes sociales:</strong>
 
-            <div class="iconos-redes">
-                <img class="img" src="./imagenes/facebook.png" alt="Facebook">
-                <img class="img" src="./imagenes/instagram.png" alt="Instagram">
-                <img class="img" src="./imagenes/tiktok.png" alt="Tik-Tok">
-            </div>
+        <div class="iconos-redes">
+          <img class="img" src="./imagenes/facebook.png" alt="Facebook">
+          <img class="img" src="./imagenes/instagram.png" alt="Instagram">
+          <img class="img" src="./imagenes/tiktok.png" alt="Tik-Tok">
         </div>
+      </div>
     </div>
 
     <p class="fecha">Fecha Actualización: Noviembre 2025</p>
-</footer>
+  </footer>
 
   <script src="script.js"></script>
+  <script src="animacion.js"></script>
 </body>
+
 </html>
