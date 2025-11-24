@@ -6,25 +6,17 @@ header {
   display: flex;               /* Coloca los elementos en la misma línea */
   justify-content: space-between; /* Separa el texto a la izquierda y el carrito a la derecha */
   align-items: center;         /* Centra verticalmente los elementos */
-  padding: 10px 30px;          /* Espaciado interno (arriba/abajo - izquierda/derecha) */
-  background-color: #f7f7f7;   /* Color de fondo suave (opcional) */
-  border-bottom: 2px solid #ccc; /* Línea decorativa abajo (opcional) */
+  padding: 10px 10px;          /* Espaciado interno (arriba/abajo - izquierda/derecha) */
+  background-color: #c3c9eb;   /* Color de fondo suave (opcional) */
+  border-bottom: 2px solid #575454; /* Línea decorativa abajo (opcional) */
 }
 
-#titulo {
-  font-family: "Century Gothic", sans-serif;
-  font-size: 28px;             /* Tamaño moderado */
-  color: #1a237e;              /* Azul oscuro */
-  margin: 0;                   /* Elimina márgenes por defecto */
-}
-
-.carrito-icono {
-  width: 50px;           /* tamaño tipo ícono */
-  height: 50px;          /* cuadrado pequeño */
+#logo{
+  width: 100px;           
+  height: 100px;          
   object-fit: contain;   /* mantiene proporción */
-  cursor: pointer;       /* cambia el cursor al pasar */
-  transition: transform 0.2s ease; /* animación suave */
 }
+
 /* --- contenedor principal --- */
 .contenedor {
   display: flex;              /* 🔥 Pone las tarjetas en una fila */
@@ -69,7 +61,7 @@ button {
 }
 
 button:hover {
-  background-color: #8589b2;
+ background: rgb(255, 166, 0);
 }
 
 .tarjeta p {
@@ -81,4 +73,15 @@ button:hover {
 
 h3{
    font-size: 20px; 
+}
+
+#vaciar-carrito {
+  cursor: pointer;
+}
+
+#vaciar-carrito:hover {
+  color: white;
+  background: rgb(255, 166, 0);
+  border-radius: 5px;
+  padding: 3px 6px;
 }
