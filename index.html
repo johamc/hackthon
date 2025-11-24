@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos.css" />
+  <title>Carrito de Compras</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="titulo">Carrito de Compras</h1>
+      <div class="info-carrito">
+        🛒 Items: <span id="total-items">0</span> |
+        Total: $<span id="total-precio">0</span>
+      </div>
+    </header>
+
+    <!-- Contenedor de tarjetas -->
+    <section class="contenedor">
+      <div class="tarjeta">
+        <img src="tenis4.png" />
+        <h3>Tenis Superstart</h3>
+        <p>Precio: $<span id="precio-super">549000</span></p>
+        <button onclick="agregarAlCarrito('super')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="image.png" />
+        <h3>Tenis Sambae</h3>
+        <p>Precio: $<span id="precio-samba">599000</span></p>
+        <button onclick="agregarAlCarrito('samba')">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="tenis3.png" />
+        <h3>Tenis Galaxy</h3>
+        <p>Precio: $<span id="precio-galaxy">209000</span></p>
+        <button onclick="agregarAlCarrito('galaxy')">Agregar al carrito</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
